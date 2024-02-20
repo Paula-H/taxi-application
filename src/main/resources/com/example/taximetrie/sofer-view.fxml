@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@hello-style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taximetrie.controller.SoferController">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0">
+               <children>
+                  <Label text="Clients list">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                     </font></Label>
+                  <ListView fx:id="clienti" prefHeight="158.0" prefWidth="231.0" />
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="127.0" text="Your most loyal client : ">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="clientFidel">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Label text="Active rides">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                     </font></Label>
+                  <ListView fx:id="comenziActive" prefHeight="160.0" prefWidth="231.0" />
+                  <HBox alignment="CENTER" prefHeight="61.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="125.0" text="Est. waiting time">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                           </font></Label>
+                        <TextField fx:id="timpAsteptare" prefHeight="25.0" prefWidth="84.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Franklin Gothic Medium" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#handleOnoreazaComanda" prefHeight="37.0" prefWidth="99.0" text="Send">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="319.0">
+               <children>
+                  <Label text="Rides for a given date">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                     </font></Label>
+                  <ListView fx:id="comenzi" prefHeight="200.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <DatePicker fx:id="datePicker" />
+                  <HBox alignment="CENTER" prefHeight="43.0" prefWidth="250.0">
+                     <children>
+                        <Label text="Rides mean : ">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="medieComenzi">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

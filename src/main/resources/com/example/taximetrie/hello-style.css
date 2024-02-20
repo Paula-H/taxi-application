@@ -1,0 +1,111 @@
+.root {
+    -fx-background-color: #1b2040;
+}
+
+.label {
+    -fx-text-fill: #f2f2f2;
+}
+
+.text-field {
+    -fx-background-color: #0f1026;
+    -fx-text-fill: #f2f2f2;
+    -fx-padding: 10px;
+    -fx-border-color: #f2911b;
+    -fx-border-radius: 5px;
+}
+
+.button {
+    -fx-background-color: #f2911b;
+    -fx-text-fill: #f2f2f2;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #4973f2;
+}
+
+.list-view {
+    -fx-background-color: #0f1026;
+    -fx-text-fill: #f2f2f2;
+    -fx-control-inner-background: #0f1026;
+}
+
+.list-cell {
+    -fx-text-fill: #f2f2f2;
+}
+
+.list-cell:hover {
+    -fx-background-color: #1b2040;
+}
+
+/* Vertical scrollbar */
+.list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #f2911b;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5px;
+}
+
+.list-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #4973f2;
+}
+
+/* Horizontal scrollbar */
+.list-view .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:horizontal .track {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: #f2911b;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5px;
+}
+
+.list-view .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #4973f2;
+}
+
+
+.date-picker {
+    -fx-background-color: #0f1026;
+    -fx-text-fill: #f2f2f2;
+}
+
+.date-picker-popup > .date-picker-popup-content {
+    -fx-background-color: #0f1026;
+}
+
+.date-picker-popup > .date-picker-popup-content > .date-picker-popup-day-button {
+    -fx-text-fill: #f2f2f2;
+}
+
+.date-picker-popup > .date-picker-popup-content > .date-picker-popup-day-button:hover {
+    -fx-background-color: #1b2040;
+}
+
+.date-picker-popup > .date-picker-popup-content > .button {
+    -fx-background-color: #f2911b;
+    -fx-text-fill: #f2f2f2;
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 3px;
+}
+
+.date-picker-popup > .date-picker-popup-content > .button:hover {
+    -fx-background-color: #4973f2;
+}
+
+.anchor-pane {
+    -fx-background-color: #1b2040;
+}
